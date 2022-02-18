@@ -17,3 +17,14 @@ function ToggleFullScreen() {
         }
     }
 }
+
+function userName(){
+  let text="Default";
+  let person = prompt("Twitter or Discord Username:", "Default");
+  if (person == null || person == "") {
+   console.log("empty");
+  } else {
+    gml_Script_gmcallback_userName(null,null,person);
+  console.log("done");
+  }
+}
